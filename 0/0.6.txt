@@ -1,0 +1,8 @@
+Kayttaja->Selain:
+note left of Selain
+Käyttäjä painaa talleta nappia
+end note
+Selain->Selain: Onsubmit event handler spa.js tiedostossa luo uuden muistiinpanon\nuudelleen piirtää html listan\nsekä kutsuu palvelimelle lähettävää funktiota
+
+Selain->Palvelin: POST new_note_spa
+Palvelin->Selain: Status 201

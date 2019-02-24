@@ -1,0 +1,15 @@
+note right of Kayttaja
+Kayttaja kirjoittaa uuden muistiinpanon
+end note
+
+Kayttaja->Selain: tallenna
+
+Selain->Palvelin: POST https://fullstack-exampleapp.herokuapp.com/new_note
+note left of Palvelin
+Palvelin suorittaa Post pyynnön koodin joka tallentaa lähetetyn sisällön JSON dataan
+end note
+Palvelin->Selain: Status 302 Redirect
+Selain->Palvelin: GET https://fullstack-exampleapp.herokuapp.com/notes
+note left of Palvelin
+Toistuu sama sekvenssi kuin tehtävässä 0.3
+end note

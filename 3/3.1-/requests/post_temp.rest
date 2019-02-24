@@ -1,0 +1,11 @@
+POST https://us-central1-cc-5-assignment.cloudfunctions.net/temp
+Content-Type: application/json
+
+{
+    "Temp" : 24.1,
+    "Hum": 33.9,
+    "Lat": 0,
+    "Lon": 0,
+    "HDOP": 0,
+    "MAC":"84 D8E172D74"
+}

@@ -1,0 +1,10 @@
+POST http://localhost:3001/api/blogs
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlBlcnRzYSIsImlkIjoiNWJlODYyNWM4MGU0NTQxZWQ4NzVkNjA2IiwiaWF0IjoxNTQxOTU2MzA3fQ.ihRTjQ23fgmrKnc0KoZFWjAxrkst3lj_j9vnQTaVI00
+
+ {
+  "title": "Omenapiirakka",
+  "author": "Esa-Pekka",
+  "url": "www.piirakka.fi",
+  "likes": 132
+ }

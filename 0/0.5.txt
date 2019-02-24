@@ -1,0 +1,37 @@
+Kayttaja->Selain:
+note left of Selain
+Käyttäjä navigoi SPA versioon sovelluksesta
+end note
+
+Selain->Palvelin: GET fullstack-exampleapp.herokuapp.com/spa
+note left of Palvelin
+Muodostetaan Muistiinpanojen HTML
+end note
+Palvelin->Selain: Status 200, Muistiinpanojen HTML
+
+Selain->Palvelin: GET main.css
+note left of Palvelin
+Muodostetaan Muistiinpanojen Tyylit
+end note
+Palvelin->Selain: Status 200, Tyylitiedosto
+
+Selain->Palvelin: GET spa.js
+note left of Palvelin
+Ladataan spa.js Skriptitiedosto
+end note
+Palvelin->Selain: Status 200, Skriptitiedosto
+note left of Palvelin
+Selain suorittaa spa.js skriptin
+
+Skriptissä määritellään GET pyyntö JSON tiedostoon
+end note
+Selain->Palvelin: GET data.json
+
+Palvelin->Selain: Status 200, Jsontiedosto
+note left of Palvelin
+Skriptissä asetettu XmlHttpRequest.onreadystatechanged laukeaa
+ja redrawNotes muodostaa HTML listan JSON tiedostoon ladatuista tiedoista
+end note
+note left of Selain
+Selain näyttää käyttäjälle HTML:n joka on tyylitelty main.css mukaisest
+end note
